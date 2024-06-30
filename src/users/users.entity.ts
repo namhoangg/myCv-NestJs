@@ -10,6 +10,7 @@ export class User {
     @AfterInsert()
     logInsert(){
         console.log('Inserted User with id', this.id);
+        console.log(this.id,this.email,this.password);
     }
     @AfterUpdate()
     logUpdate(){
